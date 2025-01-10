@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="Ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صيدليه إسبريسو</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <h1> صيدليه إسبريسو </h1>
+    </header>
+
+    <!-- قسم المنتجات -->
+    <section id="products">
+        <h2>الدواء</h2>
+        <div class="search-bar">
+            <input type="text" id="product-search" placeholder="إبحث عن دوائك . . .">
+            <button onclick="searchProducts()">بحث</button>
+        </div>
+        <div id="product-list" class="scrollable"></div>
+    </section>
+
+    <!-- قسم الأمراض -->
+    <section id="diseases">
+        <h2>معلومه صحيه</h2>
+        <div class="search-bar">
+            <input type="text" id="disease-search" placeholder="إبحث عن حاله صحيه . . .">
+            <button onclick="searchDiseases()">بحث</button>
+        </div>
+        <div id="disease-list" class="scrollable"></div>
+        <div id="disease-details"></div>
+    </section>
+
+    <!-- قسم النصائح -->
+    <section id="tips">
+        <h2>نصيحه طبيه</h2>
+        <div class="search-bar">
+            <input type="text" id="tip-search" placeholder="إبحث عن نصيحه . . .">
+            <button onclick="searchTips()">بحث</button>
+        </div>
+        <div id="tip-list" class="scrollable"></div>
+        <div id="tip-details"></div>
+    </section>
+
+    <!-- قسم العربة -->
+    <section id="cart">
+        <h>السله</h2>
+        <div id="cart-items"></div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>نورتم</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

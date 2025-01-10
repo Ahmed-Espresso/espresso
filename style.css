@@ -1,0 +1,269 @@
+/* style.css */
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #2e2e2e;
+color: #4CAF50;
+direction:rtl;
+}
+
+/* الهيدر */
+header {
+
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0 ;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+/* تنسيق الأقسام */
+section {
+    padding: 1rem;
+    margin: 2rem;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    /*font-size: 24px; */
+    color: #4CAF50;
+    
+    direction:rtl ;
+    text-align: right;
+}
+
+
+
+button{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    text-shadow: 2px 2px 4px black;
+    color: green;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: black;
+    color: #4CAF50;
+}
+
+
+
+/* شريط البحث */
+.search-bar {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    direction: rtl ;
+    justify-content:flex-start;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #2e2e2e;
+    color: #4CAF50;
+   
+}
+
+.search-bar input:focus {
+    outline: 2px solid green;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    color: #4CAF50;
+    background-color: green;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    border: none;
+    border-radius: 10px 0px 0px 10px ;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+/* سكرول الأفقي للأقسام */
+.scrollable {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    direction:rtl ;
+    text-align:right;
+   /* max-width: 100%; */
+}
+
+
+
+
+/*elhawia*/
+
+.scrollable .item {
+    background-color: #4CAF50;
+    border: 1px solid #4CAF50;
+    border-radius: 30px;
+   /* display: flex; */
+   /*overflow: hidden; */
+    margin-bottom: 20px;
+    aspect-ratio: 1/1;
+    height: 300px;
+    width: 200px;
+    gap: 0px;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: all 1.2s ease;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: inset 0px 0px 50px rgba(0,0,0,0.3);
+    direction:rtl ;
+
+}
+
+.scrollable .item img {
+    aspect-ratio: 1/1;
+    height: 30%; 
+    width: auto;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+
+
+
+ p{  
+
+      direction:rtl;
+      
+ }
+
+
+
+
+
+
+#product-list  p {
+   
+    height: 30px;
+    margin-bottom: 20px;
+    color: white;
+    direction:rtl;
+    
+}
+
+#product-list p + p {
+    margin-top: 40px;
+}
+
+
+
+
+#product-list button {
+
+    background-color: black;
+    border: none;
+    margin-top: auto;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px black;
+    color: green;
+    text-align: center;
+    width: 50%;
+
+}
+
+#product-list button:hover {
+
+    background-color: black;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    filter: brightness(1.2);
+
+}
+
+
+#product-list >div:hover {
+
+
+    background-color: #45a049;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    filter: brightness(1.3);
+    margin: 15px;
+    transform: scale(1.1);
+}
+
+
+
+#cart {
+   direction: rtl;
+
+
+}
+
+
+
+#cart-items div {
+
+    margin-bottom: 0.5rem;
+    direction:rtl ;
+   /* margin-top: 20px;*/
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* تنسيق الأزرار في قسم الأمراض والنصائح */
+button.disease-btn, button.tip-btn {
+    /*width: 100%;*/
+    padding: 1rem;
+    width: 200px;
+    /*margin-bottom: 10px;*/
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    direction:rtl ;
+
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    transition: all 1.2s ease ;
+    box-shadow: inset 0px 0px 50px rgba(0,0,0,0.3) ;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+button.disease-btn:hover, button.tip-btn:hover {
+
+    background-color: #45a049;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    filter: brightness(1.3);
+    margin: 3px;
+    transform: scale(1.1);
+
+}
